@@ -17,5 +17,5 @@ Here I explore the embeddings produced by word2vec. Please revisit the class not
 * **Synonyms & Antonyms**: Demonstrate counter-intuitive examples and explore why they happen.
 * **Solving Analogies with Word Vectors**: I use gensim to solve analogies. For example, for the analogy "man : king :: woman : x", what is x?
 * **Finding Analogies**: Use [GenSim's](https://radimrehurek.com/gensim/models/keyedvectors.html#gensim.models.keyedvectors.FastTextKeyedVectors.most_similar) `most_similar` function to find analogies, e.g. Austin is the capital of Texas, and Atlanta is the capital of Georgia.
-**Explore Incorrect Analogies**: Gensim doesn't always produce correct results. Here I explore that.
+* **Explore Incorrect Analogies**: Gensim doesn't always produce correct results. Here I explore that.
 * **Analyze bias in Word Vectors**: Use the `most_similar` function to find another case where some bias is exhibited by the vectors. E.g. I discovered that there's a bias which results in the correlation of mothers and doctors to nurse. While father and doctors is correlated to physician.
