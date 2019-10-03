@@ -5,7 +5,7 @@ In this assignment I explore two types of word vectors: those derived from **co-
 # Word Vectors
 Word Vectors are often used as a fundamental component for downstream NLP tasks, e.g. question answering, text generation, translation, etc., so it is important to build some intuitions as to their strengths and weaknesses. Here, you will explore two types of word vectors: those derived from co-occurrence matrices, and those derived via word2vec.
 
-**Note on Terminology**: The terms "word vectors" and "word embeddings" are often used interchangeably. The term "embedding" refers to the fact that we are encoding aspects of a word's meaning in a lower dimensional space. As Wikipedia states, "conceptually it involves a mathematical embedding from a space with one dimension per word to a continuous vector space with a much lower dimension".
+**Note on Terminology**: The terms "word vectors" and "word embeddings" are often used interchangeably. The term "embedding" refers to the fact that we are encoding aspects of a word's meaning in a lower dimensional space.
 
 ## Part 1: Count-Based Word vectors
 Many word vector implementations are driven by the idea that similar words, i.e., (near) synonyms, will be used in similar contexts. As a result, similar words will often be spoken or written along with a shared subset of words, i.e., contexts. By examining these contexts, we can try to develop embeddings for our words.
@@ -13,7 +13,7 @@ Many word vector implementations are driven by the idea that similar words, i.e.
 * **Dimensionality Reduction**: Use [`sklearn.decomposition.TruncatedSVD`](https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.TruncatedSVD.html) and construct a method that performs dimensionality reduction on the matrix to produce k-dimensional embeddings. Use SVD to take the top _k_ components and produce a new matrix of k-dimensional embeddings.
 
 ## Part 2: Prediction-Based Word Vectors
-Here I explore the embeddings produced by word2vec. Please revisit the class notes and lecture slides for more details on the word2vec algorithm
+Here I explore the embeddings produced by word2vec.
 * **Dimensionality Reduction**: Reduce dimensionality of Word2Vec Word Embeddings using truncated SVD.
 * **Synonyms & Antonyms**: Demonstrate counter-intuitive examples and explore why they happen.
 * **Solving Analogies with Word Vectors**: I use gensim to solve analogies. For example, for the analogy "man : king :: woman : x", what is x?
